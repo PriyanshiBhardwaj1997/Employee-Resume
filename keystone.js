@@ -19,7 +19,7 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': '.hbs',
-
+	'cloudinary config': 'cloudinary://174112475921777:yY4RDDHisK0WJ3YlBQ8G_ZsVS0k@gauravcodalien',
 	'custom engine': handlebars.create({
 		layoutsDir: 'templates/views/layouts',
 		partialsDir: 'templates/views/partials',
@@ -55,6 +55,15 @@ keystone.set('routes', require('./routes'));
 keystone.set('nav', {
 	users: 'users',
 });
+
+
+// keystone.set('cloudinary config', 'CLOUDINARY_URL=cloudinary://174112475921777:yY4RDDHisK0WJ3YlBQ8G_ZsVS0k@gauravcodalien' );
+
+// optional, will prefix each image public_id with [{prefix}]/{list.path}/{field.path}/
+keystone.set('cloudinary folders', true);
+
+// optional, will force cloudinary to serve images over https
+keystone.set('cloudinary secure', true);
 
 // Start Keystone to connect to your database and initialise the web server
 

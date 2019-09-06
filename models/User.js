@@ -5,7 +5,7 @@ const Types = keystone.Field.Types;
  * User Model
  * ==========
  */
-const User = new keystone.List('User');
+const User = new keystone.List('User',{track:true});
 
 User.add({
 	name: { type: Types.Name, required: true, index: true },
