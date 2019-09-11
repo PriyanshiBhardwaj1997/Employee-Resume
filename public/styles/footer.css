@@ -1,0 +1,59 @@
+.footer-section .footer-widget h2 {
+	color: #fff;
+	margin-bottom: 40px;
+	font-size: 22px;
+	font-weight: 600;
+}
+.footer-section p {
+	color: rgba(255,255,255,.7);
+}
+.footer-section .footer-widget ul li {
+	margin-bottom: 10px;
+}
+.footer-social li {
+	list-style: none;
+	margin: 0 10px 0 0;
+	display: inline-block;
+}
+.footer-social li a {
+	height: 50px;
+	width: 50px;
+	display: block;
+	float: left;
+	background: rgba(255,255,255,.1);
+	border-radius: 50%;
+	position: relative;
+}
+.footer-section .footer-widget ul li a {
+	color: rgba(255,255,255,.6);
+}
+.block-23 ul li, .block-23 ul li>a {
+	display: table;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+.block-23 ul li .icon {
+	width: 40px;
+	font-size: 18px;
+	padding-top: 2px;
+	color: #fff;
+}
+.block-23 ul li .icon, .block-23 ul li .text {
+	display: table-cell;
+	vertical-align: top;
+}
+.icon-map-marker:before {
+	content: "\f041";
+}
+.block-23 ul {
+	padding: 0;
+}
+.footer-social li a span {
+	position: absolute;
+	font-size: 26px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
