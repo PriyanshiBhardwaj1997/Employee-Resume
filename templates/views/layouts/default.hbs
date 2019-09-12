@@ -12,6 +12,7 @@
 		<link href="/styles/header.css" rel="stylesheet">
 		<link href="/styles/icomoon.css" rel="stylesheet">
 		<link href="/styles/slider.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
 
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor
@@ -64,13 +65,19 @@
 			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
 			//- you can upgrade to 2.1.4 (also bundled) for better performance.
 		--}}
-		<script src="/js/jquery/jquery-1.11.3.min.js"></script>
+<!--	<script src="/js/jquery.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+	<script src="/js/jquery/jquery-1.11.3.min.js"></script>
 		<script src="/js/app.js"></script>
-		<script src="/js/owl.carousel.min.js"></script>
-		{{!--
-			//- Customise which Bootstrap javascript files are served by including
-			//- them specifically here, instead of bootstrap-3.3.5.min.js
-		--}}
+		<script  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+
+	{{!--
+        //- Customise which Bootstrap javascript files are served by including
+        //- them specifically here, instead of bootstrap-3.3.5.min.js
+    --}}
 		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 		{{{isAdminEditorJS user}}}
 	</body>

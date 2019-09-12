@@ -1,0 +1,75 @@
+/*
+.slideshow * {
+	outline: none;
+}
+.slideshow .slider {
+	box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 1);
+}
+.slideshow .slider-track {
+	transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.slideshow .item {
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+.slideshow .item img {
+	width: 100%;
+	transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+	transform: scale(1.2);
+}
+.slideshow .item.slick-active img {
+	transform: scale(1);
+}
+*/
+
+.row-col {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.row-col .content-col {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-right: 20px;
+}
+.row-col .img-col {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+.slick-slider-section {
+	display: block;
+	margin-top: 111px;
+	height: 500px;
+	overflow: hidden;
+}
+.slick-slider-section .item .content-col h2 {
+	font-size: 30px;
+	font-weight: 400;
+}
+.slick-slider-section .item .content-col h1 span {
+	font-weight: 800;
+	color: #ffbd39;
+}
+.slick-slider-section .item .content-col .subheading {
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #ffbd39;
+}
+.slick-slider-section .item .content-col h1 {
+	font-size: 60px;
+	color: #fff;
+	line-height: 1.2;
+	font-weight: 800;
+}
+.slick-slider-section .item .content-col .btn.btn-white.btn-outline-white {
+	border: 1px solid rgba(255, 255, 255, 0.5) !important;
+	background: transparent !important;
+	color: #fff !important;
+}
+.slick-slide img {
+	display: block;
+	width: 100%;
+}

@@ -13,6 +13,19 @@ $(document).ready(function() {
 
 		return false;
 	});
+	$('.slider').slick({
+		draggable: true,
+		arrows: false,
+		dots: true,
+		fade: true,
+		speed: 500,
+		animateOut: 'fadeOut',
+		animateIn: 'fadeIn',
+		// infinite: false,
+		autoplay:true,
+		cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+		touchThreshold: 100
+	})
 });
 
 $(window).scroll(function() {
@@ -38,3 +51,5 @@ $(window).scroll(function() {
 	if (scroll >= 100) sticky.addClass('fixed');
 	else sticky.removeClass('fixed');
 }).scroll();
+
+
