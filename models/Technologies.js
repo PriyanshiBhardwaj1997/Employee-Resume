@@ -1,13 +1,14 @@
 const keystone  = require('keystone');
 const Types = keystone.Field.Types;
 
-const Technologies = new keystone.List('Technologies',{track:true});
+const Technologies = new keystone.List('Technologies', {
+	track: true,
+	map: { name: 'name' }
+});
 
 Technologies.add({
         name : {type: String, required: true, index: true},
-        image : { type: Types.CloudinaryImage, folder: 'path/to/image' },
-        class: {type: String, required:true, initial: true},
-        type: {type: String, required:true, initial: true}
+        image : { type: Types.CloudinaryImage, folder: 'CodalienTechnologies' },
 });
 Technologies.relationship({ref:'DeveloperContactRequest',path:'tech',refPath:'specialization'});
 

@@ -13,7 +13,7 @@ var handlebars = require('express-handlebars');
 keystone.init({
 	'name': 'CodalienEmployee',
 	'brand': 'CodalienEmployee',
-
+	'port' : 5001,
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
@@ -32,6 +32,7 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
+	
 });
 
 // Load your project's Models

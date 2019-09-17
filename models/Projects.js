@@ -10,8 +10,8 @@ const Project = new keystone.List('Project',{track:true});
 Project.add({
 	name: { type: Types.Name, required: true, index: true },
 	url: { type: Types.Text },
-	technologies: { type: Types.Relationship, ref: 'Technologies' },
-	image: { type: Types.CloudinaryImage, folder: '/CodalienEmployee'},
+	technologies: { type: Types.Relationship, ref: 'Technologies' , many: true},
+	image: { type: Types.CloudinaryImage, folder: '/CodalienProjects'},
 });
 
 
