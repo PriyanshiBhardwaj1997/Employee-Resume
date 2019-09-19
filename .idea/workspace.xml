@@ -5,10 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keystone.js" beforeDir="false" afterPath="$PROJECT_DIR$/keystone.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Config.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Experience.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Skills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Technologies.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Technologies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/views/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/views/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/views/index.hbs" afterDir="false" />
     </list>
@@ -90,7 +88,10 @@
       <workItem from="1568619887478" duration="1528000" />
       <workItem from="1568623642389" duration="1284000" />
       <workItem from="1568625723952" duration="6800000" />
-      <workItem from="1568700084991" duration="21304000" />
+      <workItem from="1568700084991" duration="21944000" />
+      <workItem from="1568874867299" duration="5325000" />
+      <workItem from="1568881614912" duration="5212000" />
+      <workItem from="1568892083106" duration="8194000" />
     </task>
     <servers />
   </component>

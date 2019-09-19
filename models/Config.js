@@ -27,14 +27,24 @@ Config.add({
 	technologies: { type: Types.Relationship, ref: 'Technologies', many: true },
 	projects: {
 		type: Types.List, fields: {
-			skill: { type: Types.Relationship, ref: 'Project' },
+			project: { type: Types.Relationship, ref: 'Project' },
 			technologies: { type: Types.Relationship, ref: 'Technologies', many: true },
+			image: { type: Types.CloudinaryImage, folder: 'codalien_emp' },
 		},
 	},
 	skills: {
 		type: Types.List, fields: {
 			skill: { type: Types.Relationship, ref: 'Technologies' },
 			rating: { type: Types.Number, required: true, initial: true },
+		},
+	},
+	experience: {
+		type: Types.List, fields: {
+			start: { type: Types.Date, required: true, initial: true },
+			end: { type: Types.Date, required: true, initial: true },
+			designation: { type: Types.Text, required: true, initial: true },
+			company: { type: Types.Text, required: true, initial: true },
+			description: { type: Types.Text, required: true, initial: true },
 		},
 	},
 	socialLinks: {

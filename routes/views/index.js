@@ -11,9 +11,11 @@ exports = module.exports = async function (req, res) {
 	locals.section = 'home';
 	locals.data ={
 		employee : {},
-		skills: {}
+		skills: {},
+		experience: {},
+		projects: {}
 	};
-	let employee = await config.model.findOne({"name.first": "Priyanshi","name.last": "Bhardwaj"}).populate('skills').lean();
+	let employee = await config.model.findOne({"name.first": "Priyanshi","name.last": "Bhardwaj"}).populate({path: 'skills.skill'}).populate({path: 'projects.project'}).lean();
 	console.log('jjjjjjjjjjjj',employee);
 	locals.data.employee.Name=employee.name.first + ' ' + employee.name.last;
 	locals.data.employee.Email=employee.email;
@@ -21,8 +23,15 @@ exports = module.exports = async function (req, res) {
 	locals.data.employee['Phone No']=employee.mobile;
 	locals.data.employee.Address=employee.address;
 	locals.data.employee['Zip code']=employee.zipCode;
-	locals.data.skills = employee.skills;
+	locals.data.skills = employee.skills; 
+	locals.data.experience = employee.experience;
+	locals.data.projects = employee.projects;
 	console.log('aaaaaaaaa',locals.data.skills);
+	console.log('qqqqqqqqqqqqqqq',locals.data.experience);
+	console.log('wwwwwwwwwww',locals.data.projects);
+	
+	
+	
 	// skillArray.forEach((_id)=>{
 	// 	let skill=keystone.list('Skills').model.findOne({"id": _id});
 	// 	locals.data.skills.Skill = skill.skill; 
