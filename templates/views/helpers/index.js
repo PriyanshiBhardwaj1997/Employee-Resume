@@ -16,7 +16,12 @@ module.exports = function () {
 	/**
 	 * Generic HBS Helpers
 	 * ===================
+	 * 
 	 */
+	_helpers.convertDateFormat = function (date){
+		return moment(date).format('YYYY');
+	};
+	
 
 	// standard hbs equality check, pass in two values from template
 	// {{#ifeq keyToCheck data.myKey}} [requires an else blockin template regardless]

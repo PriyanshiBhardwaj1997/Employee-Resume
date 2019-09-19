@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bd214d73-5d9a-475c-ae71-3a2ad03db7c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keystone.js" beforeDir="false" afterPath="$PROJECT_DIR$/keystone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Config.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Experience.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/views/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/views/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/views/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/views/helpers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/views/index.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +13,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="codalien-employee" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -91,7 +92,8 @@
       <workItem from="1568700084991" duration="21944000" />
       <workItem from="1568874867299" duration="5325000" />
       <workItem from="1568881614912" duration="5212000" />
-      <workItem from="1568892083106" duration="8194000" />
+      <workItem from="1568892083106" duration="8394000" />
+      <workItem from="1568912333113" duration="8006000" />
     </task>
     <servers />
   </component>

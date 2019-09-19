@@ -1,3 +1,4 @@
+
 var keystone = require('keystone');
 var moment = require('moment');
 var config = keystone.list('Config');
@@ -9,13 +10,23 @@ exports = module.exports = async function (req, res) {
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
 	locals.section = 'home';
+	locals.filters = {
+		employee: req.params.employee
+	};
+	let employeeName = {
+		first: locals.filters.employee.split('_')[0],
+		last: locals.filters.employee.split('_')[1]
+	};
+	employeeName.first = employeeName.first[0].toUpperCase() + employeeName.first.slice(1);
+	employeeName.last = employeeName.last[0].toUpperCase() + employeeName.last.slice(1);
+	console.log('eeeeeeeeeeeeeee', employeeName);
 	locals.data ={
 		employee : {},
 		skills: {},
 		experience: {},
 		projects: {}
 	};
-	let employee = await config.model.findOne({"name.first": "Priyanshi","name.last": "Bhardwaj"}).populate({path: 'skills.skill'}).populate({path: 'projects.project'}).lean();
+	let employee = await config.model.findOne({"name.first": employeeName.first,"name.last": employeeName.last}).populate({path: 'skills.skill'}).populate({path: 'projects.project'}).lean();
 	console.log('jjjjjjjjjjjj',employee);
 	locals.data.employee.Name=employee.name.first + ' ' + employee.name.last;
 	locals.data.employee.Email=employee.email;
@@ -30,16 +41,6 @@ exports = module.exports = async function (req, res) {
 	console.log('qqqqqqqqqqqqqqq',locals.data.experience);
 	console.log('wwwwwwwwwww',locals.data.projects);
 	
-	
-	
-	// skillArray.forEach((_id)=>{
-	// 	let skill=keystone.list('Skills').model.findOne({"id": _id});
-	// 	locals.data.skills.Skill = skill.skill; 
-	// })
-	//locals.data.skills.Skill=skillArray.skill;
-	//locals.data.skills.skill=.name;
-	// console.log('asdfgfdghftgjh',employee.technologies);
-
 	// Render the view
 	view.render('index');
 };

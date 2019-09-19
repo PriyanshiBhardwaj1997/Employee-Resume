@@ -103,7 +103,8 @@
 								<span class="number" data-number="120">120</span>
 								<span>Project complete</span>
 							</p>
-							<p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+							<p><button class="btn btn-primary py-3 px-3" onclick="generatePDF()">Download CV</button></p>
+<!--                            <input type="button" id="create_pdf" value="Generate PDF">-->
 						</div>
 					</div>
 				</div>
@@ -125,7 +126,7 @@
 			{{#each data.experience}}
 				<div class="col-md-6">
 					<div class="resume-grid ftco-animate fadeInUp ftco-animated">
-						<span class="date">{{start}}-{{end}}</span>
+						<span class="date">{{convertDateFormat start}}-{{convertDateFormat end}}</span>
 						<h2>{{company}}</h2>
 						<span class="position">{{designation}}</span>
 						<p class="mt-4">{{description}}</p>
@@ -351,15 +352,18 @@
 			<div class="row">
 				{{#each data.projects}}
 				<div class="col-md-4">
+					{{#if image}}
 					<div
 						class="project img ftco-animate d-flex justify-content-center align-items-center fadeInUp ftco-animated"
-						style="background-image: url(images/project-4.jpg);">
+						style="background-image: url({{{cloudinaryUrl image}}});">
+						
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
 							<h3><a href="#">{{project.name}}</a></h3>
 							<a href={{{project.url}}}><span>{{project.url}}</span></a>
 						</div>
 					</div>
+						{{/if}}
 				</div>
 				{{/each}}
 <!--				<div class="col-md-8">-->
