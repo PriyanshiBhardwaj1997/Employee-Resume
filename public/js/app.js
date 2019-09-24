@@ -13,17 +13,19 @@ $(document).ready(function() {
 
 		return false;
 	});
-	$('.slider').slick({
+	$('.heroSlider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		draggable: true,
 		arrows: false,
-		dots: true,
+		dots: false,
 		fade: true,
 		speed: 500,
-		animateOut: 'fadeOut',
-		animateIn: 'fadeIn',
-		// infinite: false,
+		// animateOut: 'fadeOut',
+		// animateIn: 'fadeIn',
+		// infinite: true,
 		autoplay:true,
-		cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+		// cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
 		touchThreshold: 100
 	})
 });

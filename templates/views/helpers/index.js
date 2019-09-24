@@ -3,7 +3,8 @@ var _ = require('lodash');
 var hbs = require('handlebars');
 var keystone = require('keystone');
 var cloudinary = require('cloudinary');
-
+// const jsPDF = require('jspdf');
+// import * as jsPDF from 'jspdf';
 // Collection of templates to interpolate
 var linkTemplate = _.template('<a href="<%= url %>"><%= text %></a>');
 var scriptTemplate = _.template('<script src="<%= src %>"></script>');
@@ -21,7 +22,59 @@ module.exports = function () {
 	_helpers.convertDateFormat = function (date){
 		return moment(date).format('YYYY');
 	};
+	_helpers.projectCount = function (el){
+		return `Project${el > 1?'s': ''} Completed`;
+	};
 	
+	_helpers.printContent = function(){
+		// global.window = {document: {createElementNS: () => {return {}} }};
+		// global.navigator = {};
+		// global.btoa = () => {};
+		// var element = document.querySelector('content')[0];
+		// var opt = {
+		// 	margin:       1,
+		// 	filename:     'myfile.pdf',
+		// 	image:        { type: 'jpeg', quality: 0.98 },
+		// 	html2canvas:  { scale: 2 },
+		// 	jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+		// };
+		// html2pdf().from(element).set(opt).save();
+		// html2pdf(element, opt);
+		
+		// global.window = {document: {createElementNS: () => {return {}} }};
+		// global.navigator = {};
+		// global.btoa = () => {};
+		// var jsPDF = require('jspdf');
+		// console.log('I am inside helper doSomething');
+		// var pdf = new jsPDF('p', 'pt', 'letter');
+		// source = document.querySelector('#content');
+		// specialElementHandlers = {
+		// 	// element with id of "bypass" - jQuery style selector
+		// 	'#bypassme': function (element, renderer) {
+		// 		// true = "handled elsewhere, bypass text extraction"
+		// 		return true
+		// 	}
+		// };
+		// margins = {
+		// 	top: 80,
+		// 	bottom: 60,
+		// 	left: 40,
+		// 	width: 522
+		// };
+		// pdf.fromHTML(
+		// 	source, // HTML string or DOM elem ref.
+		// 	margins.left, // x coord
+		// 	margins.top, { // y coord
+		// 		'width': margins.width, // max width of content on PDF
+		// 		'elementHandlers': specialElementHandlers
+		// 	},
+		//
+		// 	function (dispose) {
+		// 		// dispose: object with X, Y of the last line add to the PDF 
+		// 		//          this allow the insertion of new lines after html
+		// 		pdf.save('Test.pdf');
+		// 	}, margins);
+	}
 
 	// standard hbs equality check, pass in two values from template
 	// {{#ifeq keyToCheck data.myKey}} [requires an else blockin template regardless]

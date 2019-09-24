@@ -24,6 +24,7 @@ Config.add({
 	zipCode: { type: Types.Number, required: true, initial: true },
 	website: { type: Types.Url, required: true, initial: true },
 	city: { type: Types.Text, required: true, initial: true },
+	image: {type: Types.CloudinaryImage, folder: 'codalien_emp'},
 	technologies: { type: Types.Relationship, ref: 'Technologies', many: true },
 	projects: {
 		type: Types.List, fields: {
@@ -53,7 +54,7 @@ Config.add({
 			icon: { type: Types.Text, required: true, initial: true },
 		},
 	},
-	userImages: { type: Types.TextArray },
+	userImages: { type: Types.CloudinaryImages, folder: 'codalien_emp', initial:true },
 
 });
 /**
