@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd214d73-5d9a-475c-ae71-3a2ad03db7c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/views/resume.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/views/resume.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Config.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/slider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/views/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/views/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/views/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/views/resume.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/views/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/views/helpers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/views/resume.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/views/resume.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +100,7 @@
       <workItem from="1568960943113" duration="2116000" />
       <workItem from="1568965437872" duration="3046000" />
       <workItem from="1568969245212" duration="11578000" />
-      <workItem from="1569220487359" duration="27961000" />
+      <workItem from="1569220487359" duration="42924000" />
     </task>
     <servers />
   </component>

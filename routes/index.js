@@ -34,8 +34,9 @@ var routes = {
 // Setup Route Bindings
 exports = module.exports = function (app) {
 	// Views
-	app.get('/resume', routes.views.resume);
+	app.get('/resume/:employee', routes.views.resume);
 	app.get('/:employee', routes.views.index);
+	
 	
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:

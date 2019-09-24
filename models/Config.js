@@ -50,8 +50,8 @@ Config.add({
 	},
 	socialLinks: {
 		type: Types.List, fields: {
-			website: { type: Types.Url, required: true, initial: true },
-			icon: { type: Types.Text, required: true, initial: true },
+			twitterLink: { type: Types.Url, required: true, initial: true },
+			facebookLink: { type: Types.Url, required: true, initial: true },
 		},
 	},
 	userImages: { type: Types.CloudinaryImages, folder: 'codalien_emp', initial:true },
