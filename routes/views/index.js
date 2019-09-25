@@ -34,23 +34,25 @@ exports = module.exports = async function (req, res) {
 	};
 	let employee = await config.model.findOne({"slug": locals.filters.employee}).populate({path: 'skills.skill'}).populate({path: 'projects.project'}).lean().catch(error => {});
 	console.log('aaaaaaaaaaaa',employee);
+	locals.data = employee;
+	locals.data.employee = {};
 	locals.data.employee.Name=employee.name.first + ' ' + employee.name.last;
 	locals.data.employee.Email=employee.email;
 	locals.data.employee['Date Of Birth']= moment(employee.dob).format('DD-MM-YYYY');
 	locals.data.employee['Phone No']=employee.mobile;
 	locals.data.employee.Address=employee.address;
 	locals.data.employee['Zip code']=employee.zipCode;
-	locals.data.city = employee.city;
-	locals.data.employee.website = employee.website;
-	locals.data.employee.mobile =employee.mobile;
-	locals.data.skills = employee.skills; 
-	locals.data.experience = employee.experience;
-	locals.data.projects = employee.projects;
-	locals.data.image =employee.image;
-	locals.data.title = employee.title;
-	locals.data.aim = employee.aim;
-	locals.data.socialLinks = employee.socialLinks;
-	locals.data.userImages = employee.userImages;
+	// locals.data.city = employee.city;
+	// locals.data.employee.website = employee.website;
+	// locals.data.employee.mobile =employee.mobile;
+	// locals.data.skills = employee.skills; 
+	// locals.data.experience = employee.experience;
+	// locals.data.projects = employee.projects;
+	// locals.data.image =employee.image;
+	// locals.data.title = employee.title;
+	// locals.data.aim = employee.aim;
+	// locals.data.socialLinks = employee.socialLinks;
+	// locals.data.userImages = employee.userImages;
 	
 	function doSomething (e) {
 		e.preventDefault();

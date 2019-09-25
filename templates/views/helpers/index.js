@@ -26,8 +26,6 @@ module.exports = function () {
 		return `Project${el > 1?'s': ''} Completed`;
 	};
 	
-	
-
 	// standard hbs equality check, pass in two values from template
 	// {{#ifeq keyToCheck data.myKey}} [requires an else blockin template regardless]
 	_helpers.ifeq = function (a, b, options) {
