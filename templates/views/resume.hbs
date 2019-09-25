@@ -4,15 +4,15 @@
         <div id="paper">
             <div id="paper-mid">
                 <div class="entry">
-                    <div class="left_penal"><h1 class="resume">{{data.employee.Name}}</h1>
+                    <div class="left_penal"><h1 class="resume">{{data.name.first}} {{data.name.last}}</h1>
                         <p class="resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></div>
                     <ul class="right_penal top_ul">
-                        <li class="ad">{{data.employee.address}}</li>
-                        <li class="mail">{{data.employee.city}} {{data.employee.zipCode}}
+                        <li class="ad">{{data.address}}</li>
+                        <li class="mail">{{data.city}} {{data.zipCode}}
                         </li>
-                        <li class="tel">{{data.employee.mobile}}
+                        <li class="tel">{{data.mobile}}
                         </li>
-                        <li class="web">{{data.employee.email}}
+                        <li class="web">{{data.email}}
                         </li>
                     </ul>
                 </div>
@@ -62,3 +62,6 @@
         </div>
     </div>
 </div>
+<script>
+	window.print();
+</script>
